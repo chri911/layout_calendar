@@ -1,0 +1,23 @@
+@each $day in $days {
+  .calendar-#{$day} {
+    @for $n from 1 through 4 {
+      & :nth-child(#{$day+$n}) {
+        display: none;
+      }
+    }
+  }
+}
+
+@each $week-day, $margin in $week {
+  .calendar-#{$week-day} {
+    & :first-child {
+      margin-left: #{$margin};
+    }
+  }
+}
+
+@for $i from 1 through 31 {
+  .calendar > div:nth-child(#{$i})::before {
+    content: "#{$i}";
+  }
+}

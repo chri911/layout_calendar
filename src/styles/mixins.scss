@@ -1,0 +1,10 @@
+@mixin main-font {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+}
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

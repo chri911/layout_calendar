@@ -1,0 +1,14 @@
+$size: 100px;
+$gap: 1px;
+$left: ($size + $gap);
+
+$week:
+  "mon" ($gap),
+  "tue" (1*$left+$gap),
+  "wed" (2*$left+$gap),
+  "thu" (3*$left+$gap),
+  "fri" (4*$left+$gap),
+  "sat" (5*$left+$gap),
+  "sun" (6*$left+$gap);
+
+$days: 28, 29, 30, 31;
